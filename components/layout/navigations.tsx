@@ -8,7 +8,7 @@ import NavigationLinks from "./navigatiionLinks";
 import logoutIcon from "@/public/assets/icons/logout.svg";
 import Icon from '../Icons';
 
-const Navigation = () => {
+const Navigation = ({ setOpen }:any) => {
   const router = useRouter();
 
   return (
@@ -20,13 +20,13 @@ const Navigation = () => {
               <Icon.logoIcon />
             </div>
             <div className="flex md:hidden relative mr-4">
-              {/* <Icon.MobileLogo /> */}
+              <Icon.logoIcon />
             </div>
           </div>
         </Link>
         <div className="mx-8">
           {navLinks().map((route, index) => (
-            <NavigationLinks key={index} {...route} />
+            <NavigationLinks key={index} {...route} setOpen={setOpen} />
           ))}
         </div>
         <div className="flex-grow-0">

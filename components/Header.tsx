@@ -3,8 +3,10 @@
 import Image from 'next/image';
 import Icon from './Icons';
 import MobileSidebar from './layout/mobile-sidebar';
+import { useRouter } from 'next/navigation';
 
 const Header = () => {
+  const router = useRouter()
   return (
     <div className="flex px-[30px] pt-[32px] sticky top-0 w-full bg-white z-30   md:px-[32px] items-center justify-between">
       <div className="hidden md:flex text-[#2B3B5A] text-xl font-medium">
