@@ -4,10 +4,15 @@ import React from "react";
 import DashboardCard from "@/components/DashboardCard";
 import Icon from '@/components/Icons';
 import Link from 'next/link';
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({ weight: ["500","600"], subsets: ["latin"] });
 
 const Dashboard = () => {
   return (
-    <div className="!bg-[#fff] font-montserrat sm:h-auto flex flex-col relative min-h-full  text-black  py-[32px]  space-y-[32px]">
+    <div
+      className={`!bg-[#fff] font-montserrat sm:h-auto flex flex-col relative min-h-full  text-black  py-[32px]  space-y-[32px] ${poppins.className}`}
+    >
       <div className="px-[30px]">
         <div className="flex w-full gap-6">
           <div className="flex flex-col gap-5 flex-1">
@@ -34,17 +39,17 @@ const Dashboard = () => {
                   <span className="font-semibold">18/52ha089</span>
                 </div>
                 <div className="flex items-center pt-4 space-x-4">
-                  <div className="flex text-[#4169E1] cursor-pointer font-semibold gap-x-[3px] text-sm md:text-base">
+                  <div className="flex text-[#4169E1] items-center  cursor-pointer font-semibold gap-x-[3px] text-sm md:text-base">
                     <Icon.copyIcon />
                     Copy
                   </div>
                   <Link href={"/setting"}>
-                    <div className="flex text-[#4169E1] font-semibold gap-x-[3px] text-sm md:text-base">
+                    <div className="flex text-[#4169E1] items-center  font-semibold gap-x-[3px] text-sm md:text-base">
                       <Icon.editIcon />
                       Edit
                     </div>
                   </Link>
-                  <div className="flex text-[#4169E1] font-semibold gap-x-[3px] text-sm md:text-base">
+                  <div className="flex text-[#4169E1] items-center font-semibold gap-x-[3px] text-sm md:text-base">
                     <Icon.shareIcon />
                     Share
                   </div>
@@ -66,7 +71,7 @@ const Dashboard = () => {
                 <span className="font-semibold">0</span>
               </div>
               <div className="flex items-center pt-4 space-x-4">
-                <div className="flex text-[#4169E1] gap-x-[3px] text-sm md:text-base">
+                <div className="flex items-center  text-[#4169E1] gap-x-[3px] text-sm md:text-base">
                   <Icon.cashIcon />
                   Cashout
                 </div>

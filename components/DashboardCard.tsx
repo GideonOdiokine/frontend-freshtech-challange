@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import creditCardIcon from "@/public/assets/images/creditCard.png";
+import creditCardIcon from "@/public/assets/images/card.png";
 
 const DashboardCard = () => {
   return (
@@ -13,9 +13,9 @@ const DashboardCard = () => {
       </div>
       <Image
         src={creditCardIcon}
-        width={100}
-        height={100}
-        className="w-[230px]  hidden md:hidden lg:flex drop-shadow-2xl  absolute top-[-2px] right-0 h-full object-left-top"
+        width={398}
+        height={398}
+        className="hidden md:hidden lg:flex  absolute top-[-2px] right-0 h-full object-cover"
         alt="card"
       />
     </div>
