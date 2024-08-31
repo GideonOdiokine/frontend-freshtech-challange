@@ -2,7 +2,7 @@
 import { ChangePasswordCard } from "@/components/ChangePasswordCard";
 import CustomFormField from "@/components/CustomFormField";
 import FileUploader from "@/components/FileUploader";
-import { FormFieldType } from "@/components/forms/PatientForm";
+import { FormFieldType } from '@/components/forms/LoginForm';
 import SettingCard from "@/components/SettingCard";
 import { Form, FormControl } from "@/components/ui/form";
 import React from "react";
