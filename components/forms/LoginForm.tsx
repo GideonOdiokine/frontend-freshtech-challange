@@ -48,7 +48,7 @@ export function LoginForm() {
       <div className="grid grid-cols-1">
         <Button
           variant="outline"
-          className="bg-white drop-shadow-lg h-14 border border-[#D7E1F4] text-[#2B3B5A]"
+          className="bg-white drop-shadow-lg gap-x-4 h-14 border border-[#D7E1F4] text-[#2B3B5A]"
         >
           <Icon.googleIcon />
           Login with Google
