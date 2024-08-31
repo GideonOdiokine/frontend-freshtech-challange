@@ -109,12 +109,15 @@ export function LoginForm() {
 
                         <Label
                           htmlFor="airplane-mode"
-                          className="text-[#4C689E]"
+                          className="text-[#4C689E] text-[11px] md:text-sm font-normal"
                         >
                           Remember me
                         </Label>
                       </div>
-                      <Link href={"/"} className="text-[#EE5D50] text-sm">
+                      <Link
+                        href={"/"}
+                        className="text-[#EE5D50] text-[10px] font-normal md:text-sm"
+                      >
                         Recover Password
                       </Link>
                     </div>
