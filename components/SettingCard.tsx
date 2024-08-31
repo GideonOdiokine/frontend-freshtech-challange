@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardFooter } from "./ui/card";
 import Image from "next/image";
-import copyIcon from "@/public/assets/icons/copy.svg";
+import Icon from './Icons';
 
 const SettingCard = () => {
   return (
@@ -40,12 +40,7 @@ const SettingCard = () => {
           <span className="text-[#4C689E] flex items-end flex-col font-semibold text-base">
             www.subsum.com/tre/
             <div className="flex cursor-pointer text-[#4169E1] gap-x-[3px] text-base">
-              <Image
-                src={copyIcon}
-                width={18}
-                alt="copy"
-                className="w-fit flex justify-end"
-              />
+              <Icon.copyIcon />
               Copy
             </div>
           </span>

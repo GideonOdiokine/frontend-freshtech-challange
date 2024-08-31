@@ -18,6 +18,7 @@ import googleIcon from "@/public/assets/icons/google.svg";
 import goBackIcon from "@/public/assets/icons/goBack.svg";
 import cardIcon from "@/public/assets/icons/cardIcon.svg";
 
+
 const Icon: any = {
   cardIcon,
   dashboardImg,
