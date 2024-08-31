@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import DashboardCard from "@/components/DashboardCard";
 import Icon from '@/components/Icons';
+import Link from 'next/link';
 
 const Dashboard = () => {
   return (
@@ -29,14 +30,16 @@ const Dashboard = () => {
                   <span className="font-semibold">18/52ha089</span>
                 </div>
                 <div className="flex items-center pt-4 space-x-4">
-                  <div className="flex text-[#4169E1] font-semibold gap-x-[3px] text-base">
+                  <div className="flex text-[#4169E1] cursor-pointer font-semibold gap-x-[3px] text-base">
                     <Icon.copyIcon />
                     Copy
                   </div>
-                  <div className="flex text-[#4169E1] font-semibold gap-x-[3px] text-base">
-                    <Icon.editIcon />
-                    Edit
-                  </div>
+                  <Link href={"/setting"}>
+                    <div className="flex text-[#4169E1] font-semibold gap-x-[3px] text-base">
+                      <Icon.editIcon />
+                      Edit
+                    </div>
+                  </Link>
                   <div className="flex text-[#4169E1] font-semibold gap-x-[3px] text-base">
                     <Icon.shareIcon />
                     Share
