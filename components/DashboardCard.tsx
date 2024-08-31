@@ -1,7 +1,6 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 import creditCardIcon from "@/public/assets/images/creditCard.png";
-
 
 const DashboardCard = () => {
   return (
@@ -16,11 +15,11 @@ const DashboardCard = () => {
         src={creditCardIcon}
         width={100}
         height={100}
-        className="w-[230px] hidden md:hidden lg:flex  absolute top-[-2px] right-0 drop-shadow-2xl h-full object-left-top"
+        className="w-[230px]  hidden md:hidden lg:flex drop-shadow-2xl  absolute top-[-2px] right-0 h-full object-left-top"
         alt="card"
       />
     </div>
   );
-}
+};
 
-export default DashboardCard
+export default DashboardCard;

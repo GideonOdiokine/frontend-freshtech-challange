@@ -12,10 +12,10 @@ const Navigation = ({ setOpen }:any) => {
   const router = useRouter();
 
   return (
-    <aside className="space-y-4 pt-[32px] flex flex-col h-full bg-[#EFF3FB] text-white">
+    <aside className="space-y-4 pt-[32px] flex flex-col h-full bg-[#EFF3FB] text-white overflow-scroll">
       <div className=" flex flex-col flex-1">
         <Link href="/dashboard" passHref>
-          <div className="flex items-center  pl-[40px] pb-[30px] ">
+          <div className="flex items-center  pl-[40px] pb-[59px] ">
             <div className="hidden md:flex relative ">
               <Icon.logoIcon />
             </div>

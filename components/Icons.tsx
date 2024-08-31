@@ -16,11 +16,10 @@ import editIcon from "@/public/assets/icons/edit.svg";
 import cashIcon from "@/public/assets/icons/cash.svg";
 import googleIcon from "@/public/assets/icons/google.svg";
 import goBackIcon from "@/public/assets/icons/goBack.svg";
+import cardIcon from "@/public/assets/icons/cardIcon.svg";
 
-
-
-
-const Icon:any = {
+const Icon: any = {
+  cardIcon,
   dashboardImg,
   goBackIcon,
   googleIcon,
