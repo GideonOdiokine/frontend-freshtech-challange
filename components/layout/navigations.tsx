@@ -36,6 +36,7 @@ const Navigation = ({ setOpen }:any) => {
             role="button"
             aria-label="Log-out"
             className="text-[#4C689E] flex pl-[55px] mb-10 text-sm font-montserrat font-medium"
+            onClick={()=> router.push("/auth/login")}
           >
             <Icon.logoutIcon />
 
