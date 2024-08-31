@@ -1,5 +1,4 @@
 import { LoginForm } from "@/components/forms/LoginForm";
-import RegisterForm from "@/components/forms/RegisterForm";
 import GoBackButton from '@/components/GoBackButton';
 import { Button } from '@/components/ui/button';
 import React from "react";

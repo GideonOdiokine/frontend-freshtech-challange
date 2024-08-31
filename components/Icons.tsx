@@ -14,11 +14,13 @@ import copyIcon from "@/public/assets/icons/copy.svg";
 import shareIcon from "@/public/assets/icons/share.svg";
 import editIcon from "@/public/assets/icons/edit.svg";
 import cashIcon from "@/public/assets/icons/cash.svg";
+import googleIcon from "@/public/assets/icons/google.svg";
 
 
 
-const Icon = {
+const Icon:any = {
   dashboardImg,
+  googleIcon,
   copyIcon,
   shareIcon,
   editIcon,

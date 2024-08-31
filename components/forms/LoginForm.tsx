@@ -3,7 +3,6 @@ import SubmitButton from "../SubmitButton";
 import { Button } from "../ui/button";
 import { Card, CardContent, CardFooter } from "../ui/card";
 import Image from "next/image";
-import googleIcon from "@/public/assets/icons/google.svg";
 import CustomFormField from "../CustomFormField";
 import { useForm } from "react-hook-form";
 import { Form, FormControl } from "../ui/form";
@@ -12,9 +11,9 @@ import { Label } from "../ui/label";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { LoginFormValidation } from "@/lib/validation";
 import { z } from "zod";
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import Icon from "../Icons";
 
 export enum FormFieldType {
   INPUT = "input",
@@ -31,15 +30,14 @@ export function LoginForm() {
     defaultValues: {
       email: "",
       password: "",
-      rememberMe:false
+      rememberMe: false,
     },
   });
-  const router = useRouter()
+  const router = useRouter();
 
   const onSubmit = async (values: z.infer<typeof LoginFormValidation>) => {
     console.log(values);
-    router.push("/dashboard")
-
+    router.push("/dashboard");
   };
 
   return (
@@ -52,7 +50,7 @@ export function LoginForm() {
           variant="outline"
           className="bg-white drop-shadow-lg h-14 border border-[#D7E1F4] text-[#2B3B5A]"
         >
-          <Image src={googleIcon} alt="google-icon" className="mr-4" />
+          <Icon.googleIcon />
           Login with Google
         </Button>
       </div>
