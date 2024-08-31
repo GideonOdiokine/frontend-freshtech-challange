@@ -38,7 +38,7 @@ const Dashboard = () => {
                     <Icon.copyIcon />
                     Copy
                   </div>
-                  <Link href={"/settings"}>
+                  <Link href={"/setting"}>
                     <div className="flex text-[#4169E1] font-semibold gap-x-[3px] text-sm md:text-base">
                       <Icon.editIcon />
                       Edit
