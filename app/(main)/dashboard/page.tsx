@@ -13,34 +13,38 @@ const Dashboard = () => {
           <div className="flex flex-col gap-5 flex-1">
             <div className="flex h-[112px] flex-1 p-4 items-center justify-between rounded-3xl  border-2 border-[#D7E1F4]">
               <div className="">
-                <h2 className="text-[#3C517C] text-base">Wallet Balance</h2>
-                <div className="text-[#3C517C] text-4xl font-semibold">
+                <h2 className="text-[#3C517C] text-sm md:text-base">
+                  Wallet Balance
+                </h2>
+                <div className="text-[#3C517C] text-sm md:text-4xl font-semibold">
                   ₦3000
                 </div>
               </div>
-              <Button className="shad-primary-btn px-10">Fund Wallet</Button>
+              <Button className="shad-primary-btn  md:px-10">
+                Fund Wallet
+              </Button>
             </div>
             <div className="flex h-[112px] flex-1 p-6 items-center border-2 justify-between rounded-3xl border-[#D7E1F4]">
               <div>
-                <h2 className="text-[#3C517C] text-base font-normal">
+                <h2 className="text-[#3C517C] text-sm md:text-base font-normal">
                   Referral
                 </h2>
-                <div className="text-[#3C517C] leading-7  text-base font-normal">
+                <div className="text-[#3C517C] md:leading-7  text-sm md:text-base font-normal">
                   Referral Code:{" "}
                   <span className="font-semibold">18/52ha089</span>
                 </div>
                 <div className="flex items-center pt-4 space-x-4">
-                  <div className="flex text-[#4169E1] cursor-pointer font-semibold gap-x-[3px] text-base">
+                  <div className="flex text-[#4169E1] cursor-pointer font-semibold gap-x-[3px] text-sm md:text-base">
                     <Icon.copyIcon />
                     Copy
                   </div>
-                  <Link href={"/setting"}>
-                    <div className="flex text-[#4169E1] font-semibold gap-x-[3px] text-base">
+                  <Link href={"/settings"}>
+                    <div className="flex text-[#4169E1] font-semibold gap-x-[3px] text-sm md:text-base">
                       <Icon.editIcon />
                       Edit
                     </div>
                   </Link>
-                  <div className="flex text-[#4169E1] font-semibold gap-x-[3px] text-base">
+                  <div className="flex text-[#4169E1] font-semibold gap-x-[3px] text-sm md:text-base">
                     <Icon.shareIcon />
                     Share
                   </div>
@@ -55,24 +59,24 @@ const Dashboard = () => {
         <div className="grid md:grid-cols-[440.5px] mt-5">
           <div className="flex  p-6  border-2 justify-between rounded-3xl border-[#D7E1F4]">
             <div>
-              <h2 className="text-[#3C517C] text-base font-normal">
+              <h2 className="text-[#3C517C] text-sm md:text-base font-normal">
                 Total referrals made
               </h2>
-              <div className="text-[#3C517C] leading-7 text-2xl font-normal">
+              <div className="text-[#3C517C] leading-7 text-sm md:text-2xl font-normal">
                 <span className="font-semibold">0</span>
               </div>
               <div className="flex items-center pt-4 space-x-4">
-                <div className="flex text-[#4169E1] gap-x-[3px] text-base">
+                <div className="flex text-[#4169E1] gap-x-[3px] text-sm md:text-base">
                   <Icon.cashIcon />
                   Cashout
                 </div>
               </div>
             </div>
             <div className="pr-4">
-              <h2 className="text-[#3C517C] text-base font-normal">
+              <h2 className="text-[#3C517C] text-sm md:text-base font-normal">
                 Current wallet Bonus
               </h2>
-              <div className="text-[#3C517C] leading-7  text-2xl font-normal">
+              <div className="text-[#3C517C] leading-7  text-sm md:text-2xl font-normal">
                 <span className="font-semibold">₦0.00</span>
               </div>
             </div>
