@@ -15,11 +15,14 @@ import shareIcon from "@/public/assets/icons/share.svg";
 import editIcon from "@/public/assets/icons/edit.svg";
 import cashIcon from "@/public/assets/icons/cash.svg";
 import googleIcon from "@/public/assets/icons/google.svg";
+import goBackIcon from "@/public/assets/icons/goBack.svg";
+
 
 
 
 const Icon:any = {
   dashboardImg,
+  goBackIcon,
   googleIcon,
   copyIcon,
   shareIcon,

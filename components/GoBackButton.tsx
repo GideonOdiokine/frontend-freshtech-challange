@@ -3,8 +3,8 @@ import { cn } from "@/lib/utils";
 import Image from 'next/image';
 import { useRouter } from "next/navigation";
 import React from "react";
-import goBackIcon from "@/public/assets/icons/goBack.svg";
 import { Poppins } from 'next/font/google';
+import Icon from './Icons';
 
 
 type GoBackButtonProps = {
@@ -32,7 +32,7 @@ const GoBackButton = ({
           poppins.className
         )}
       >
-        <Image src={goBackIcon} alt="shop" />
+       <Icon.goBackIcon/>
         <span className="text-[#4169E1] text-base">{label}</span>
       </button>
     </React.Fragment>
