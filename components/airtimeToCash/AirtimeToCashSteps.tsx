@@ -45,7 +45,7 @@ export function AirtimeToCashSteps() {
     <div className="px-[30px] mx-auto">
       <div className="flex w-full gap-x-2 pb-[54px]">
         <div className="w-full text-center">
-          <h6 className="text-[#4169E1] font-semibold text-sm md:text-base">
+          <h6 className="text-[#4169E1] font-semibold text-xs md:text-base">
             Fill Info
           </h6>
           <div
@@ -58,7 +58,7 @@ export function AirtimeToCashSteps() {
           <h6
             className={`${
               step >= 2 ? "text-[#4169E1]" : "text-[#D7E1F4]"
-            }  font-semibold text-sm md:text-base`}
+            }  font-semibold text-xs md:text-base`}
           >
             Make Payment
           </h6>
@@ -72,7 +72,7 @@ export function AirtimeToCashSteps() {
           <h6
             className={`${
               step >= 2 && "text-[#4169E1]"
-            } text-[#D7E1F4] font-semibold text-sm md:text-base`}
+            } text-[#D7E1F4] font-semibold text-xs md:text-base`}
           >
             View Receipt
           </h6>
