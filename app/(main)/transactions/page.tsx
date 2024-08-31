@@ -1,6 +1,5 @@
 import { columns } from "@/components/table/columns";
 import { DataTable } from "@/components/table/DataTable";
-import { getRecentAppointmentList } from "@/lib/actions/appointment.actions";
 import React from "react";
 
 const data: any = [
@@ -17,7 +16,16 @@ const data: any = [
     service: "mtn Airtime VTU",
     amount: 100,
     totalAmount: 100,
-    status: "Initiated",
+    status: "Successful",
+    paymentMethod: "Transfer",
+    transactionNo: "17045621860850336938179613",
+    actions: "",
+  },
+  {
+    service: "mtn Airtime VTU",
+    amount: 100,
+    totalAmount: 100,
+    status: "Failed",
     paymentMethod: "Transfer",
     transactionNo: "17045621860850336938179613",
     actions: "",
@@ -35,7 +43,16 @@ const data: any = [
     service: "mtn Airtime VTU",
     amount: 100,
     totalAmount: 100,
-    status: "Initiated",
+    status: "Successful",
+    paymentMethod: "Transfer",
+    transactionNo: "17045621860850336938179613",
+    actions: "",
+  },
+  {
+    service: "mtn Airtime VTU",
+    amount: 100,
+    totalAmount: 100,
+    status: "Failed",
     paymentMethod: "Transfer",
     transactionNo: "17045621860850336938179613",
     actions: "",
@@ -53,7 +70,16 @@ const data: any = [
     service: "mtn Airtime VTU",
     amount: 100,
     totalAmount: 100,
-    status: "Initiated",
+    status: "Successful",
+    paymentMethod: "Transfer",
+    transactionNo: "17045621860850336938179613",
+    actions: "",
+  },
+  {
+    service: "mtn Airtime VTU",
+    amount: 100,
+    totalAmount: 100,
+    status: "Failed",
     paymentMethod: "Transfer",
     transactionNo: "17045621860850336938179613",
     actions: "",
@@ -71,7 +97,16 @@ const data: any = [
     service: "mtn Airtime VTU",
     amount: 100,
     totalAmount: 100,
-    status: "Initiated",
+    status: "Successful",
+    paymentMethod: "Transfer",
+    transactionNo: "17045621860850336938179613",
+    actions: "",
+  },
+  {
+    service: "mtn Airtime VTU",
+    amount: 100,
+    totalAmount: 100,
+    status: "Failed",
     paymentMethod: "Transfer",
     transactionNo: "17045621860850336938179613",
     actions: "",
@@ -89,7 +124,7 @@ const data: any = [
     service: "mtn Airtime VTU",
     amount: 100,
     totalAmount: 100,
-    status: "Initiated",
+    status: "Successful",
     paymentMethod: "Transfer",
     transactionNo: "17045621860850336938179613",
     actions: "",
@@ -98,20 +133,12 @@ const data: any = [
     service: "mtn Airtime VTU",
     amount: 100,
     totalAmount: 100,
-    status: "Initiated",
+    status: "Failed",
     paymentMethod: "Transfer",
     transactionNo: "17045621860850336938179613",
     actions: "",
   },
-  {
-    service: "mtn Airtime VTU",
-    amount: 100,
-    totalAmount: 100,
-    status: "Initiated",
-    paymentMethod: "Transfer",
-    transactionNo: "17045621860850336938179613",
-    actions: "",
-  },
+
 ];
 const Page = () => {
   return (

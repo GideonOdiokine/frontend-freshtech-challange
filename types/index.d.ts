@@ -5,7 +5,7 @@ declare type SearchParamProps = {
     searchParams: { [key: string]: string | string[] | undefined };
 };
 
-declare type Status = "successful" | "failed" | "initiated";
+declare type Status = "Successful" | "Failed" | "Initiated";
 
 
 

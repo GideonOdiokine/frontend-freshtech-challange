@@ -1,11 +1,10 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
-import { Appointment } from "@/types/appwrite.types";
 import { StatusBadge } from "../StatusBadge";
 import { TableModal } from "../modals/TableModal";
 
-export const columns: ColumnDef<Appointment>[] = [
+export const columns: ColumnDef<any>[] = [
   {
     accessorKey: "service",
     header: "Service",

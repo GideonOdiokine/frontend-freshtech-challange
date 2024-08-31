@@ -7,9 +7,9 @@ export const StatusBadge = ({ status }: { status: Status }) => {
     <div className={clsx("status-badge", {})}>
       <p
         className={clsx("text-12-semibold capitalize", {
-          "text-[#2DAE32]": status === "successful",
-          "text-[#EE5D50]": status === "failed",
-          "text-[#FFB547]": status === "initiated",
+          "text-[#2DAE32]": status === "Successful",
+          "text-[#EE5D50]": status === "Failed",
+          "!text-[#FFB547]": status === "Initiated",
         })}
       >
         {status}
