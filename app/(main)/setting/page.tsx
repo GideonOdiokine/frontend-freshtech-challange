@@ -29,8 +29,7 @@ const SettingPage = () => {
                 <CustomFormField
                   control={form.control}
                   fieldType={FormFieldType.SKELETON}
-                  name="identificationDocument"
-                  //   label="Scanned copy of identification document"
+                  name="picture"
                   renderSkeleton={(field) => (
                     <FormControl>
                       <FileUploader
