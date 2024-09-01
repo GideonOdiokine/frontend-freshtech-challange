@@ -169,7 +169,7 @@ export function AirtimeToCashSteps() {
                     </form>
                     <div className="mt-[54px]">
                       <Button
-                        className={`shad-primary-btn py-[17px] w-full`}
+                        className={`shad-primary-btn !py-[17px]  !h-[50px] w-full`}
                         onClick={handleNext}
                       >
                         Proceed

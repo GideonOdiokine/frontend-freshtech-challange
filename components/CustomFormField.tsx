@@ -19,6 +19,10 @@ import { Textarea } from "./ui/textarea";
 import { Checkbox } from "./ui/checkbox";
 import { useState } from "react";
 import { FormFieldType } from './forms/LoginForm';
+import { Inter } from "next/font/google";
+
+
+const inter = Inter({ weight: ["400", "500","300", "600"], subsets: ["latin"] });
 
 interface CustomProps {
   control: Control<any>;
@@ -185,7 +189,11 @@ const CustomFormField = (props: CustomProps) => {
       render={({ field, fieldState: { error } }) => (
         <FormItem className="flex-1 space-y-1">
           {fieldType !== FormFieldType.CHECKBOX && label && (
-            <FormLabel className="!text-[#4C689E] font-normal">{label}</FormLabel>
+            <FormLabel
+              className={`!text-[#4C689E] font-normal ${inter.className}`}
+            >
+              {label}
+            </FormLabel>
           )}
           <RenderField field={field} props={props} error={error} />
           <FormMessage className="shad-error" />
