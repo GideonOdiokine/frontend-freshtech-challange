@@ -17,7 +17,7 @@ const SubmitButton = ({className, isLoading,disabled, children}:ButtonProps) => 
       disabled={isLoading || disabled}
       className={
         className ??
-        `shad-primary-btn py-[17px] w-full ${disabled && "bg-[#4169E1] opacity-0 cursor-not-allowed"}`
+        `shad-primary-btn !py-[17px] !h-[50px] w-full ${disabled && "bg-[#4169E1] opacity-0 cursor-not-allowed"}`
       }
     >
       {isLoading ? (
