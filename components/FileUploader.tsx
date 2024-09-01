@@ -34,7 +34,7 @@ const FileUploader = ({ files, onChange }: FileUploaderProps) => {
             width={100}
             height={100}
             alt="upload"
-            className='max-h-[400px]'
+            className='max-h-[300px] w-[300px'
           />
           <div className="file-upload_label flex items-center space-x-2">
             <Image

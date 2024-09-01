@@ -358,7 +358,7 @@ body {
   }
 
   .shad-select-content {
-    @apply bg-dark-400 border-dark-500 !important;
+    @apply bg-white text-black border-[#D7E1F4] !important;
   }
 
   .shad-dialog {

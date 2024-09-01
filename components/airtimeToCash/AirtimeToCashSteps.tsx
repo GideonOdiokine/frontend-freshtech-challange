@@ -3,7 +3,6 @@ import { useState } from "react";
 import {
   Card,
   CardContent,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "../ui/card";
@@ -16,7 +15,10 @@ import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { NetworkOptions } from '@/constants';
 import { FormFieldType } from '../forms/LoginForm';
+import { Inter } from 'next/font/google';
 
+
+const inter = Inter({ weight: ["500", "600"], subsets: ["latin"] });
 
 export function AirtimeToCashSteps() {
   const form = useForm({
@@ -45,7 +47,9 @@ export function AirtimeToCashSteps() {
     <div className="px-[30px] mx-auto">
       <div className="flex w-full gap-x-2 pb-[54px]">
         <div className="w-full text-center">
-          <h6 className="text-[#4169E1] font-semibold text-xs md:text-base">
+          <h6
+            className={`text-[#4169E1] font-semibold text-xs md:text-base ${inter.className}`}
+          >
             Fill Info
           </h6>
           <div
@@ -58,21 +62,23 @@ export function AirtimeToCashSteps() {
           <h6
             className={`${
               step >= 2 ? "text-[#4169E1]" : "text-[#D7E1F4]"
-            }  font-semibold text-xs md:text-base`}
+            }  font-semibold text-xs md:text-base ${inter.className}`}
           >
             Make Payment
           </h6>
           <div
             className={`${
               step >= 2 ? "bg-[#4169E1]" : "bg-[#D7E1F4]"
-            } h-[7px] rounded-[100px]`}
+            } h-[7px] rounded-[100px] ${inter.className}`}
           ></div>
         </div>
         <div className="w-full text-center">
           <h6
             className={`${
               step >= 2 && "text-[#4169E1]"
-            } text-[#D7E1F4] font-semibold text-xs md:text-base`}
+            } text-[#D7E1F4] font-semibold text-xs md:text-base ${
+              inter.className
+            }`}
           >
             View Receipt
           </h6>
@@ -93,7 +99,7 @@ export function AirtimeToCashSteps() {
                 </CardTitle>
               </CardHeader>
               <div className="grid">
-                <CardContent className='p-0'>
+                <CardContent className="p-0">
                   <Form {...form}>
                     <form
                       onSubmit={form.handleSubmit(onSubmit)}
@@ -109,13 +115,12 @@ export function AirtimeToCashSteps() {
                         >
                           {NetworkOptions.map((network, i) => (
                             <SelectItem key={network + i} value={network}>
-                              <div className="flex cursor-pointer items-center gap-2">
+                              <div className="flex cursor-pointer items-center">
                                 <Image
                                   src="/assets/icons/etisalat.svg"
-                                  width={32}
-                                  height={32}
+                                  width={16.83}
+                                  height={16.83}
                                   alt="network"
-                                  className="rounded-full"
                                 />
                                 <p>{network}</p>
                               </div>
@@ -170,7 +175,9 @@ export function AirtimeToCashSteps() {
                         Proceed
                       </Button>
                     </div>
+
                   </Form>
+
                 </CardContent>
               </div>
             </>
