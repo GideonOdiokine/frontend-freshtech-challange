@@ -48,13 +48,13 @@ export function ChangePasswordCard() {
     <Tabs defaultValue="account" className="md:w-[400px]  mt-4 md:mt-0">
       <TabsList className="grid w-full grid-cols-2 gap-x-2 bg-[#fff] border-[#D7E1F4] p-2 border rounded-[1000px]">
         <TabsTrigger
-          className="rounded-[100px] !py-[14px] font-semibold text-sm "
+          className="rounded-[100px] !py-[10px] !px-[40px] font-semibold text-sm "
           value="account"
         >
           Change Password
         </TabsTrigger>
         <TabsTrigger
-          className="rounded-[100px] !py-[14px] font-semibold text-sm"
+          className="rounded-[100px] !py-[10px] !px-[40px] font-semibold text-sm"
           value="password"
         >
           Change PIN
