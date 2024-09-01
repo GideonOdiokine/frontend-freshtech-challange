@@ -10,7 +10,7 @@ const Login = () => {
         <GoBackButton label="Home" />
         <Button className="bg-[#4169E1] text-white fixed  right-10">Sign Up</Button>
       </div>
-      <div className="container pt-12 md:pt-8 lg:!px[223px] md:!px-[150px]">
+      <div className="container pt-12 md:pt-8 lg:!px[223px] md:!px-[200px]">
         <LoginForm />
       </div>
     </section>
